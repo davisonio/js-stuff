@@ -61,5 +61,15 @@ let array =  [[2, 7, 6], [9, 5, 1], [4, 3, 8]];
 
 for (let i = 0; i <= 3; i++){
     let vertical = array[0][i] + array[1][i] + array[2][i];
-    let horizontal = array[i][0] + array[i][1] + array[i][2];
+    // let horizontal = array[i][0] + array[i][1] + array[i][2];
 }
+
+// Recursive function
+function factorial(n){
+    if (n === 1){
+        return 1;
+    } else {
+        return n * factorial(n - 1);
+    }
+}
+console.log(factorial(6));
